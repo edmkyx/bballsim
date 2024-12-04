@@ -1,7 +1,7 @@
 import pygame
 import tkinter as tk
-from game.game_engine import GameEngine
-from ui.interface import Interface
+from src.game.game_engine import GameEngine
+from src.ui.interface import Interface
 
 def main():
     # Initialize game engine
