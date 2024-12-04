@@ -1,15 +1,17 @@
-import pygame
+# main.py
+
 import tkinter as tk
-from src.game.game_engine import GameEngine
+from src.game.simulation import Game
 from src.ui.interface import Interface
 
 def main():
     # Initialize game engine
-    game_engine = GameEngine()
+    game = Game()
+    game.start_game()
     
     # Initialize user interface
     root = tk.Tk()
-    app = Interface(root, game_engine)
+    app = Interface(root, game)
     
     # Start the game
     root.mainloop()
